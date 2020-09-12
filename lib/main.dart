@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:stay_connected/src/pages/survey_view.dart';
+import 'package:stay_connected/src/pages/welcome_view.dart';
 
 import './src/pages/index.dart';
 
@@ -9,11 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'StayConnected',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: IndexPage(),
+      // Change this to WindowView or SurveyView depending on what screen
+      //you are working on
+      home: SurveyView(),
     );
   }
 }
