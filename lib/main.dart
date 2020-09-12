@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'; // hello world
+import 'package:flutter/material.dart'; // hello, world!
 
 void main() {
   runApp(MyApp());
