@@ -4,6 +4,7 @@ import 'package:agora_rtc_engine/rtc_engine.dart';
 import 'package:agora_rtc_engine/rtc_local_view.dart' as RtcLocalView;
 import 'package:agora_rtc_engine/rtc_remote_view.dart' as RtcRemoteView;
 import 'package:flutter/material.dart';
+import 'package:stay_connected/src/pages/survey_view.dart';
 import 'package:stay_connected/src/pages/topics_view.dart';
 
 import '../utils/settings.dart';
@@ -19,10 +20,14 @@ class CallPage extends StatefulWidget {
   const CallPage({Key key, this.channelName, this.role}) : super(key: key);
 
   @override
-  _CallPageState createState() => _CallPageState();
+  _CallPageState createState() => _CallPageState(channelName);
 }
 
 class _CallPageState extends State<CallPage> {
+  final String channelName;
+
+  _CallPageState(this.channelName);
+
   final _users = <int>[];
   final _infoStrings = <String>[];
   bool muted = false;
@@ -277,7 +282,7 @@ class _CallPageState extends State<CallPage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => TopicsView(),
+        builder: (context) => SurveyView(),
       ),
     );
   }
@@ -297,7 +302,9 @@ class _CallPageState extends State<CallPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Agora Flutter QuickStart'),
+        title: Center(
+          child: Text(channelName),
+        ),
       ),
       backgroundColor: Colors.black,
       body: Center(
