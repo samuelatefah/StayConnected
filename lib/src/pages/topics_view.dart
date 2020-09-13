@@ -108,7 +108,10 @@ class _TopicsViewState extends State<TopicsView> {
         appBar: AppBar(
           centerTitle: true,
           backgroundColor: Colors.blue,
-          title: Text("Choose a Topic"),
+          title: Text(
+            "Choose a Topic",
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),
+          ),
         ),
         body: Builder(
           builder: (context) => SizedBox(
