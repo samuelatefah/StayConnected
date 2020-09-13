@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       ),
       // Change this to WindowView or SurveyView depending on what screen
       //you are working on
-      home: TopicsView(),
+      home: WelcomeView(),
     );
   }
 }
