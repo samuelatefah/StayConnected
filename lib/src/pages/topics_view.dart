@@ -88,11 +88,21 @@ class _TopicsViewState extends State<TopicsView> {
                           ),
                         );
                       },
-                      child: Text(
-                        'Animals',
-                        style: TextStyle(
-                          fontSize: 20,
-                        ),
+                      child: Stack(
+                        children: [
+                          Center(
+                            child: Image.network(
+                                'https://storage.googleapis.com/petbacker/images/blog/2017/dog-and-cat-cover.jpg'),
+                          ),
+                          Center(
+                            child: Text(
+                              'Animals',
+                              style: TextStyle(
+                                fontSize: 20,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     FlatButton(
