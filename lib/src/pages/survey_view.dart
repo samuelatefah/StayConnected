@@ -14,7 +14,7 @@ class _SurveyViewState extends State<SurveyView> {
 
   /// if channel textField is validated to have error
   bool _validateError = false;
-  final snackBar = SnackBar(content: Text('Please choose a topic!'));
+  //final snackBar = SnackBar(content: Text('Please choose a topic!'));
   bool pressed = false;
 
   String _channelName = '';
@@ -73,6 +73,7 @@ class _SurveyViewState extends State<SurveyView> {
                       setState(() {
                         pressed = true;
                         _channelName = 'Sports';
+                        onJoin();
                       });
                     },
                     child: Text(
@@ -82,14 +83,14 @@ class _SurveyViewState extends State<SurveyView> {
                 ],
               ),
             ),
-            FlatButton(
+            /*FlatButton(
               child: Text('Join'),
               onPressed: () {
                 _channelName.isEmpty
                     ? Scaffold.of(context).showSnackBar(snackBar)
                     : onJoin();
               },
-            ),
+            ),*/
           ],
         ),
       ),
