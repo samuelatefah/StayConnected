@@ -34,7 +34,7 @@ class _ArtViewState extends State<ArtView> {
             true,
           ),
           AddTopic(
-              'Photography',
+              'Photos',
               null,
               "https://www.digitalphotomentor.com/photography/2018/05/famous-photographs-Dorothea.Lange_.1936-migrant-mother-750x975.jpg",
               true),
