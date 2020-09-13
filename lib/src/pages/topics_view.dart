@@ -56,7 +56,7 @@ class _TopicsViewState extends State<TopicsView> {
 
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.lightBlueAccent,
+          backgroundColor: Colors.blue,
           title: Center(child: Text("Choose a topic")),
         ),
         body: Builder(
