@@ -15,6 +15,7 @@ class _SurveyViewState extends State<SurveyView> {
   /// if channel textField is validated to have error
   bool _validateError = false;
   final snackBar = SnackBar(content: Text('Please choose a topic!'));
+  bool pressed = false;
 
   String _channelName = '';
 
@@ -50,20 +51,35 @@ class _SurveyViewState extends State<SurveyView> {
 
   @override
   Widget build(BuildContext context) {
+    final _width = MediaQuery.of(context).size.width;
+    final _height = MediaQuery.of(context).size.height;
+
     return Scaffold(
+        //TODO: Add an appbar here!
         body: Builder(
-      builder: (context) => Center(
+      builder: (context) => SizedBox(
+        width: _width,
+        height: _height,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            FlatButton(
-              onPressed: () {
-                setState(() {
-                  _channelName = 'Sports';
-                });
-              },
-              child: Text(
-                'Sports',
+            Expanded(
+              child: ListView(
+                physics: AlwaysScrollableScrollPhysics(),
+                children: [
+                  FlatButton(
+                    color: pressed ? Colors.blue : Colors.transparent,
+                    highlightColor: Colors.blue,
+                    onPressed: () {
+                      setState(() {
+                        pressed = true;
+                        _channelName = 'Sports';
+                      });
+                    },
+                    child: Text(
+                      'Sports',
+                    ),
+                  ),
+                ],
               ),
             ),
             FlatButton(
