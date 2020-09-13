@@ -1,6 +1,7 @@
 import 'package:agora_rtc_engine/rtc_engine.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:stay_connected/src/pages/animals_view.dart';
 import 'package:stay_connected/src/pages/call.dart';
 import 'package:stay_connected/src/pages/index.dart';
 
@@ -80,11 +81,12 @@ class _TopicsViewState extends State<TopicsView> {
                       ),
                       highlightColor: Colors.blue,
                       onPressed: () {
-                        setState(() {
-                          pressed = true;
-                          _channelName = 'Animals';
-                          onJoin();
-                        });
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => AnimalsView(),
+                          ),
+                        );
                       },
                       child: Text(
                         'Animals',
