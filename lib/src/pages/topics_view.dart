@@ -67,165 +67,223 @@ class _TopicsViewState extends State<TopicsView> {
             child: Column(
               children: [
                 Expanded(
-                  child: ListView(
-                    physics: AlwaysScrollableScrollPhysics(),
-                    children: [
-                      FlatButton(
-                        color: pressed ? Colors.blue : Colors.transparent,
-                        highlightColor: Colors.blue,
-                        onPressed: () {
-                          setState(() {
-                            pressed = true;
-                            _channelName = 'Art';
-                            onJoin();
-                          });
-                        },
-                        child: Text(
-                          'Art',
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                        ),
-                      ),
-                      FlatButton(
-                        color: pressed ? Colors.blue : Colors.transparent,
-                        highlightColor: Colors.blue,
-                        onPressed: () {
-                          setState(() {
-                            pressed = true;
-                            _channelName = 'Beauty';
-                            onJoin();
-                          });
-                        },
-                        child: Text(
-                          'Beauty',
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                        ),
-                      ),
-                      FlatButton(
-                        color: pressed ? Colors.blue : Colors.transparent,
-                        highlightColor: Colors.blue,
-                        onPressed: () {
-                          setState(() {
-                            pressed = true;
-                            _channelName = 'Books';
-                            onJoin();
-                          });
-                        },
-                        child: Text(
-                          'Books',
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                        ),
-                      ),
-                      FlatButton(
-                        color: pressed ? Colors.blue : Colors.transparent,
-                        highlightColor: Colors.blue,
-                        onPressed: () {
-                          setState(() {
-                            pressed = true;
-                            _channelName = 'Cooking';
-                            onJoin();
-                          });
-                        },
-                        child: Text(
-                          'Cooking',
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                        ),
-                      ),
-                      FlatButton(
-                        color: pressed ? Colors.blue : Colors.transparent,
-                        highlightColor: Colors.blue,
-                        onPressed: () {
-                          setState(() {
-                            pressed = true;
-                            _channelName = 'Games';
-                            onJoin();
-                          });
-                        },
-                        child: Text(
-                          'Games',
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                        ),
-                      ),
-                      FlatButton(
-                        color: pressed ? Colors.blue : Colors.transparent,
-                        highlightColor: Colors.blue,
-                        onPressed: () {
-                          setState(() {
-                            pressed = true;
-                            _channelName = 'General';
-                            onJoin();
-                          });
-                        },
-                        child: Text(
-                          'General',
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                        ),
-                      ),
-                      FlatButton(
-                        color: pressed ? Colors.blue : Colors.transparent,
-                        highlightColor: Colors.blue,
-                        onPressed: () {
-                          setState(() {
-                            pressed = true;
-                            _channelName = 'Movies/TV';
-                            onJoin();
-                          });
-                        },
-                        child: Text(
-                          'Movies/TV',
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                        ),
-                      ),
-                      FlatButton(
-                        color: pressed ? Colors.blue : Colors.transparent,
-                        highlightColor: Colors.blue,
-                        onPressed: () {
-                          setState(() {
-                            pressed = true;
-                            _channelName = 'Music';
-                            onJoin();
-                          });
-                        },
-                        child: Text(
-                          'Music',
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                        ),
-                      ),
-                      FlatButton(
-                        color: pressed ? Colors.blue : Colors.transparent,
-                        highlightColor: Colors.blue,
-                        onPressed: () {
-                          setState(() {
-                            pressed = true;
-                            _channelName = 'Sports';
-                            onJoin();
-                          });
-                        },
-                        child: Text(
-                          'Sports',
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                        ),
-                      ),
-                    ],
+                    child: GridView(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
                   ),
-                ),
+                  children: [
+                    FlatButton(
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          width: 1.0,
+                        ),
+                      ),
+                      highlightColor: Colors.blue,
+                      onPressed: () {
+                        setState(() {
+                          pressed = true;
+                          _channelName = 'Animals';
+                          onJoin();
+                        });
+                      },
+                      child: Text(
+                        'Animals',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                    FlatButton(
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          width: 1.0,
+                        ),
+                      ),
+                      highlightColor: Colors.blue,
+                      onPressed: () {
+                        setState(() {
+                          pressed = true;
+                          _channelName = 'Art';
+                          onJoin();
+                        });
+                      },
+                      child: Text(
+                        'Art',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                    FlatButton(
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          width: 1.0,
+                        ),
+                      ),
+                      highlightColor: Colors.blue,
+                      onPressed: () {
+                        setState(() {
+                          pressed = true;
+                          _channelName = 'Beauty';
+                          onJoin();
+                        });
+                      },
+                      child: Text(
+                        'Beauty',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                    FlatButton(
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          width: 1.0,
+                        ),
+                      ),
+                      highlightColor: Colors.blue,
+                      onPressed: () {
+                        setState(() {
+                          pressed = true;
+                          _channelName = 'Books';
+                          onJoin();
+                        });
+                      },
+                      child: Text(
+                        'Books',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                    FlatButton(
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          width: 1.0,
+                        ),
+                      ),
+                      highlightColor: Colors.blue,
+                      onPressed: () {
+                        setState(() {
+                          pressed = true;
+                          _channelName = 'Cooking';
+                          onJoin();
+                        });
+                      },
+                      child: Text(
+                        'Cooking',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                    FlatButton(
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          width: 1.0,
+                        ),
+                      ),
+                      highlightColor: Colors.blue,
+                      onPressed: () {
+                        setState(() {
+                          pressed = true;
+                          _channelName = 'Games';
+                          onJoin();
+                        });
+                      },
+                      child: Text(
+                        'Games',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                    FlatButton(
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          width: 1.0,
+                        ),
+                      ),
+                      highlightColor: Colors.blue,
+                      onPressed: () {
+                        setState(() {
+                          pressed = true;
+                          _channelName = 'General';
+                          onJoin();
+                        });
+                      },
+                      child: Text(
+                        'General',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                    FlatButton(
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          width: 1.0,
+                        ),
+                      ),
+                      highlightColor: Colors.blue,
+                      onPressed: () {
+                        setState(() {
+                          pressed = true;
+                          _channelName = 'Movies/TV';
+                          onJoin();
+                        });
+                      },
+                      child: Text(
+                        'Movies/TV',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                    FlatButton(
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          width: 1.0,
+                        ),
+                      ),
+                      highlightColor: Colors.blue,
+                      onPressed: () {
+                        setState(() {
+                          pressed = true;
+                          _channelName = 'Music';
+                          onJoin();
+                        });
+                      },
+                      child: Text(
+                        'Music',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                    FlatButton(
+                      shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          width: 1.0,
+                        ),
+                      ),
+                      highlightColor: Colors.blue,
+                      onPressed: () {
+                        setState(() {
+                          pressed = true;
+                          _channelName = 'Sports';
+                          onJoin();
+                        });
+                      },
+                      child: Text(
+                        'Sports',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ],
+                )),
                 /*FlatButton(
               child: Text('Join'),
               onPressed: () {
