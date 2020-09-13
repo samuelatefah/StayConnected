@@ -175,14 +175,6 @@ class _TopicsViewState extends State<TopicsView> {
                     ],
                   ),
                 ),
-                /*FlatButton(
-              child: Text('Join'),
-              onPressed: () {
-                _channelName.isEmpty
-                    ? Scaffold.of(context).showSnackBar(snackBar)
-                    : onJoin();
-              },
-            ),*/
               ],
             ),
           ),
