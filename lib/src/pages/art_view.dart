@@ -15,7 +15,7 @@ class _ArtViewState extends State<ArtView> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Animals'),
+        title: Text('How do you Express Creativity?'),
       ),
       body: GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -23,14 +23,20 @@ class _ArtViewState extends State<ArtView> {
         ),
         children: [
           AddTopic(
-              'Cats',
+              'Drawing',
               null,
-              "https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg",
+              "https://img-a.udemycdn.com/course/750x422/2334082_be3d.jpg",
               true),
           AddTopic(
-              'Dogs',
+            'Painting',
+            null,
+            "https://media.timeout.com/images/103166739/image.jpg",
+            true,
+          ),
+          AddTopic(
+              'Photography',
               null,
-              "https://static01.nyt.com/images/2019/06/17/science/17DOGS/17DOGS-facebookJumbo.jpg",
+              "https://www.digitalphotomentor.com/photography/2018/05/famous-photographs-Dorothea.Lange_.1936-migrant-mother-750x975.jpg",
               true),
         ],
       ),

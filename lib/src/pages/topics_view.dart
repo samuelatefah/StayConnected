@@ -3,7 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:stay_connected/src/pages/Widgets/add_topic.dart';
 import 'package:stay_connected/src/pages/animals_view.dart';
+import 'package:stay_connected/src/pages/art_view.dart';
+import 'package:stay_connected/src/pages/beauty_view.dart';
+import 'package:stay_connected/src/pages/books_view.dart';
 import 'package:stay_connected/src/pages/call.dart';
+import 'package:stay_connected/src/pages/cooking_view.dart';
 import 'package:stay_connected/src/pages/index.dart';
 
 class TopicsView extends StatefulWidget {
@@ -121,22 +125,22 @@ class _TopicsViewState extends State<TopicsView> {
                           false),
                       AddTopic(
                           'Art',
-                          null,
+                          ArtView(),
                           'https://s3-eu-west-1.amazonaws.com/wbm.thumbnail/dissolve/1200/941126.jpg',
                           false),
                       AddTopic(
                           'Beauty',
-                          null,
+                          BeautyView(),
                           'https://post.healthline.com/wp-content/uploads/2020/04/makeup_composition_overhead-1200x628-facebook-1200x628.jpg',
                           false),
                       AddTopic(
                           'Books',
-                          null,
+                          BooksView(),
                           'https://www.rd.com/wp-content/uploads/2017/10/This-Is-How-Long-It-Takes-To-Read-The-Whole-Dictionary_509582812-Billion-Photos_FB-e1574101045824.jpg',
                           false),
                       AddTopic(
                           'Cooking',
-                          null,
+                          CookingView(),
                           'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWYrBDnEtKo-YEIHoXp-pQwuuAq4-kAFiHVw&usqp=CAU',
                           false),
                       AddTopic(
