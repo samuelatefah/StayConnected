@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stay_connected/src/pages/topics_view.dart';
 import 'package:stay_connected/src/pages/welcome_view.dart';
 
 import './src/pages/index.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       ),
       // Change this to WindowView or SurveyView depending on what screen
       //you are working on
-      home: WelcomeView(),
+      home: TopicsView(),
     );
   }
 }
