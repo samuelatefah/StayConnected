@@ -19,10 +19,14 @@ class CallPage extends StatefulWidget {
   const CallPage({Key key, this.channelName, this.role}) : super(key: key);
 
   @override
-  _CallPageState createState() => _CallPageState();
+  _CallPageState createState() => _CallPageState(channelName);
 }
 
 class _CallPageState extends State<CallPage> {
+  final String channelName;
+
+  _CallPageState(this.channelName);
+
   final _users = <int>[];
   final _infoStrings = <String>[];
   bool muted = false;
@@ -297,7 +301,9 @@ class _CallPageState extends State<CallPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Agora Flutter QuickStart'),
+        title: Center(
+          child: Text(channelName),
+        ),
       ),
       backgroundColor: Colors.black,
       body: Center(
