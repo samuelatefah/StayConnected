@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:stay_connected/src/pages/call.dart';
 
-class AnimalsView extends StatefulWidget {
+class AnimalView extends StatefulWidget {
   @override
   _AnimalsViewState createState() => _AnimalsViewState();
 }
