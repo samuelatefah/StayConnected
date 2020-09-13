@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:stay_connected/src/pages/topics_view.dart';
 import 'package:stay_connected/src/pages/welcome_view.dart';
 
-import './src/pages/index.dart';
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {

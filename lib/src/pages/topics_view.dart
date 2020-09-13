@@ -9,7 +9,6 @@ import 'package:stay_connected/src/pages/books_view.dart';
 import 'package:stay_connected/src/pages/call.dart';
 import 'package:stay_connected/src/pages/cooking_view.dart';
 import 'package:stay_connected/src/pages/games_view.dart';
-import 'package:stay_connected/src/pages/index.dart';
 import 'package:stay_connected/src/pages/movies_tv_view.dart';
 import 'package:stay_connected/src/pages/music_view.dart';
 import 'package:stay_connected/src/pages/sports_view.dart';
