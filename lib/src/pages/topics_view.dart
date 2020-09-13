@@ -1,17 +1,17 @@
-import 'package:agora_rtc_engine/rtc_engine.dart';
 import 'package:flutter/material.dart';
-import 'package:permission_handler/permission_handler.dart';
+
 import 'package:stay_connected/src/pages/Widgets/add_topic.dart';
 import 'package:stay_connected/src/pages/animals_view.dart';
 import 'package:stay_connected/src/pages/art_view.dart';
 import 'package:stay_connected/src/pages/beauty_view.dart';
 import 'package:stay_connected/src/pages/books_view.dart';
-import 'package:stay_connected/src/pages/call.dart';
+
 import 'package:stay_connected/src/pages/cooking_view.dart';
 import 'package:stay_connected/src/pages/games_view.dart';
 import 'package:stay_connected/src/pages/movies_tv_view.dart';
 import 'package:stay_connected/src/pages/music_view.dart';
 import 'package:stay_connected/src/pages/sports_view.dart';
+import 'package:stay_connected/src/pages/welcome_view.dart';
 
 class TopicsView extends StatefulWidget {
   @override
@@ -19,45 +19,6 @@ class TopicsView extends StatefulWidget {
 }
 
 class _TopicsViewState extends State<TopicsView> {
-  ClientRole _role = ClientRole.Broadcaster;
-
-  /// if channel textField is validated to have error
-  bool _validateError = false;
-  //final snackBar = SnackBar(content: Text('Please choose a topic!'));
-  bool pressed = false;
-
-  String _channelName = '';
-
-  Future<void> onJoin() async {
-    // update input validation
-    setState(() {
-      //_channelController.text.isEmpty
-      _channelName.isEmpty ? _validateError = true : _validateError = false;
-    });
-    //if (_channelController.text.isNotEmpty) {
-    if (_channelName.isNotEmpty) {
-      // await for camera and mic permissions before pushing video page
-      await _handleCameraAndMic();
-      // push video page with given channel name
-      await Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => CallPage(
-            //channelName: _channelController.text,
-            channelName: _channelName,
-            role: _role,
-          ),
-        ),
-      );
-    }
-  }
-
-  Future<void> _handleCameraAndMic() async {
-    await PermissionHandler().requestPermissions(
-      [PermissionGroup.camera, PermissionGroup.microphone],
-    );
-  }
-
   FlatButton addTopic(
       String topicName, Widget navigation, String imageAddress) {
     return FlatButton(
@@ -105,6 +66,17 @@ class _TopicsViewState extends State<TopicsView> {
 
     return Scaffold(
         appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => WelcomeView(),
+                ),
+              );
+            },
+          ),
           centerTitle: true,
           backgroundColor: Colors.blue,
           title: Text(
