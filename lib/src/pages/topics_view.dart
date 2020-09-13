@@ -8,7 +8,11 @@ import 'package:stay_connected/src/pages/beauty_view.dart';
 import 'package:stay_connected/src/pages/books_view.dart';
 import 'package:stay_connected/src/pages/call.dart';
 import 'package:stay_connected/src/pages/cooking_view.dart';
+import 'package:stay_connected/src/pages/games_view.dart';
 import 'package:stay_connected/src/pages/index.dart';
+import 'package:stay_connected/src/pages/movies_tv_view.dart';
+import 'package:stay_connected/src/pages/music_view.dart';
+import 'package:stay_connected/src/pages/sports_view.dart';
 
 class TopicsView extends StatefulWidget {
   @override
@@ -145,27 +149,27 @@ class _TopicsViewState extends State<TopicsView> {
                           false),
                       AddTopic(
                           'Games',
-                          null,
+                          GamesView(),
                           'https://i.pcmag.com/imagery/articles/00n0I7NojThD7LNdz31s0jH-8.fit_scale.size_1050x591.v1569486931.jpg',
                           false),
                       AddTopic(
                           'General',
                           null,
                           'https://proofthatblog.com/wp-content/uploads/2013/06/question-mark.jpg',
-                          false),
+                          true),
                       AddTopic(
                           'Movies/TV',
-                          null,
+                          MoviesTVView(),
                           'https://cdn3.movieweb.com/i/article/M4dH9tdBE4BmfPWnS3RerbK8sOOqMA/1200:100/Disney-Plus-Launch-Movies-Tv-Shows-Full-List.jpg',
                           false),
                       AddTopic(
                           'Music',
-                          null,
+                          MusicView(),
                           'https://cnet1.cbsistatic.com/img/FaRwLPEhtWImd3ABytDiyJz7HQM=/1200x630/2020/06/16/91844037-74e7-4ed8-a9cb-22fad4d8a7ce/beats-solo3-club-collection.jpg',
                           false),
                       AddTopic(
                           'Sports',
-                          null,
+                          SportsView(),
                           'https://media.npr.org/assets/img/2020/06/10/gettyimages-200199027-001-b5fb3d8d8469ab744d9e97706fa67bc5c0e4fa40.jpg',
                           false),
                     ],
