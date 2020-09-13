@@ -4,7 +4,6 @@ import 'package:agora_rtc_engine/rtc_engine.dart';
 import 'package:agora_rtc_engine/rtc_local_view.dart' as RtcLocalView;
 import 'package:agora_rtc_engine/rtc_remote_view.dart' as RtcRemoteView;
 import 'package:flutter/material.dart';
-import 'package:stay_connected/src/pages/survey_view.dart';
 import 'package:stay_connected/src/pages/topics_view.dart';
 
 import '../utils/settings.dart';
@@ -282,7 +281,7 @@ class _CallPageState extends State<CallPage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => SurveyView(),
+        builder: (context) => TopicsView(),
       ),
     );
   }

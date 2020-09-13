@@ -4,12 +4,12 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:stay_connected/src/pages/call.dart';
 import 'package:stay_connected/src/pages/index.dart';
 
-class SurveyView extends StatefulWidget {
+class TopicsView extends StatefulWidget {
   @override
-  _SurveyViewState createState() => _SurveyViewState();
+  _TopicsViewState createState() => _TopicsViewState();
 }
 
-class _SurveyViewState extends State<SurveyView> {
+class _TopicsViewState extends State<TopicsView> {
   ClientRole _role = ClientRole.Broadcaster;
 
   /// if channel textField is validated to have error
