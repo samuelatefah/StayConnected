@@ -56,34 +56,38 @@ class _SurveyViewState extends State<SurveyView> {
 
     return Scaffold(
         //TODO: Add an appbar here!
+        appBar: AppBar(
+          backgroundColor: Colors.blueGrey,
+          title: Center(child: Text("Choose a topic")),
+        ),
         body: Builder(
-      builder: (context) => SizedBox(
-        width: _width,
-        height: _height,
-        child: Column(
-          children: [
-            Expanded(
-              child: ListView(
-                physics: AlwaysScrollableScrollPhysics(),
-                children: [
-                  FlatButton(
-                    color: pressed ? Colors.blue : Colors.transparent,
-                    highlightColor: Colors.blue,
-                    onPressed: () {
-                      setState(() {
-                        pressed = true;
-                        _channelName = 'Sports';
-                        onJoin();
-                      });
-                    },
-                    child: Text(
-                      'Sports',
-                    ),
+          builder: (context) => SizedBox(
+            width: _width,
+            height: _height,
+            child: Column(
+              children: [
+                Expanded(
+                  child: ListView(
+                    physics: AlwaysScrollableScrollPhysics(),
+                    children: [
+                      FlatButton(
+                        color: pressed ? Colors.blue : Colors.transparent,
+                        highlightColor: Colors.blue,
+                        onPressed: () {
+                          setState(() {
+                            pressed = true;
+                            _channelName = 'Sports';
+                            onJoin();
+                          });
+                        },
+                        child: Text(
+                          'Sports',
+                        ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-            ),
-            /*FlatButton(
+                ),
+                /*FlatButton(
               child: Text('Join'),
               onPressed: () {
                 _channelName.isEmpty
@@ -91,9 +95,9 @@ class _SurveyViewState extends State<SurveyView> {
                     : onJoin();
               },
             ),*/
-          ],
-        ),
-      ),
-    ));
+              ],
+            ),
+          ),
+        ));
   }
 }
