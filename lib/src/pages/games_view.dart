@@ -4,12 +4,12 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:stay_connected/src/pages/Widgets/add_topic.dart';
 import 'package:stay_connected/src/pages/call.dart';
 
-class SportsView extends StatefulWidget {
+class GamesView extends StatefulWidget {
   @override
-  _SportsViewState createState() => _SportsViewState();
+  _GamesViewState createState() => _GamesViewState();
 }
 
-class _SportsViewState extends State<SportsView> {
+class _GamesViewState extends State<GamesView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
