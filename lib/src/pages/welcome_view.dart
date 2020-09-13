@@ -22,7 +22,7 @@ class _WelcomeViewState extends State<WelcomeView> {
               child: Icon(
                   Icons.people,
                   color: Colors.blue,
-                  size: 60,
+                  size: 100,
                 ),
               ),
           RaisedButton(
@@ -37,7 +37,11 @@ class _WelcomeViewState extends State<WelcomeView> {
       );
             },
             child: Text('Get Started', 
-              style: TextStyle(color: Colors.white),),
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30,
+              )
+            ),
           ),
         ],
       ),
