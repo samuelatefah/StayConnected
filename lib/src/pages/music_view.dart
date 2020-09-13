@@ -15,7 +15,12 @@ class _MusicViewState extends State<MusicView> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('What type of Music do you Vibe to?'),
+        title: Text(
+          'What Type of Music do you Vibe to?',
+          style: TextStyle(
+            fontSize: 18,
+          ),
+        ),
       ),
       body: GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

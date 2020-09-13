@@ -33,7 +33,7 @@ class _GamesViewState extends State<GamesView> {
               "https://images-na.ssl-images-amazon.com/images/I/81rNjavDj3L._AC_SL1500_.jpg",
               true),
           AddTopic(
-              'Playstation',
+              'PS5',
               null,
               "https://cdn.mos.cms.futurecdn.net/DPiA4pJvzSPW7ujEB7tBu6-1200-80.jpg",
               true),

@@ -15,7 +15,12 @@ class _SportsViewState extends State<SportsView> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('How do you Stay Physically Active'),
+        title: Text(
+          'How do you Stay Physically Active',
+          style: TextStyle(
+            fontSize: 18,
+          ),
+        ),
       ),
       body: GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -46,7 +51,7 @@ class _SportsViewState extends State<SportsView> {
               "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/1399/2020/07/31140138/Soccer-ball_0.jpg",
               true),
           AddTopic(
-              'Weight Lifting',
+              'Weights',
               null,
               "https://static01.nyt.com/images/2018/09/18/well/family/sub18weight/sub18weight-videoSixteenByNineJumbo1600.jpg",
               true),

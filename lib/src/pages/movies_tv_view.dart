@@ -16,7 +16,11 @@ class _MoviesTVViewState extends State<MoviesTVView> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-            'NetFlix? Hulu? Amazon Prime? What types of Movies & TV Shows Interest you?'),
+          'What types of Movies & TV Shows Interest you?',
+          style: TextStyle(
+            fontSize: 14,
+          ),
+        ),
       ),
       body: GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -28,22 +32,30 @@ class _MoviesTVViewState extends State<MoviesTVView> {
               null,
               "https://m.media-amazon.com/images/G/01/seo/siege-lists/best-comedy-audiobooks-social.jpg",
               true),
-          AddTopic('Hulu', null,
-              "https://pics.paypal.com/00/c/gifts/us/hulu.jpg", true),
+          AddTopic(
+            'Hulu',
+            null,
+            "https://www.lefthudson.com/wp-content/uploads/2019/11/solid-green-background-luxury-solid-backgrounds-image-wallpaper-cave-ideas-of-solid-green-background.jpg",
+            true,
+          ),
           AddTopic(
               'Netflix',
               null,
-              "https://play-lh.googleusercontent.com/myH_2mHzOUqr0UVHUvsAMANT2a-XFvxxiuob8g49KjdVHU87lU8xujwg1BgTTKId-w",
+              "https://dwglogo.com/wp-content/uploads/2019/02/Netflix_N_logo.png",
               true),
           AddTopic(
               'Reality',
               null,
               "https://miro.medium.com/max/504/1*Rot1mCyS-1-1moJ0zo71EA.jpeg",
               true),
-          AddTopic('Romantic', null,
-              "https://www.jacksonandperkins.com/images/l/v2191_1.jpg", true),
           AddTopic(
-              'Superheroes',
+            'Romantic',
+            null,
+            "https://www.jacksonandperkins.com/images/l/v2191_1.jpg",
+            true,
+          ),
+          AddTopic(
+              'Superhero',
               null,
               "https://static.tvtropes.org/pmwiki/pub/images/rsz_superheroes2.png",
               true),
