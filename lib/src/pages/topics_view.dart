@@ -77,6 +77,7 @@ class _TopicsViewState extends State<TopicsView> {
                       shape: RoundedRectangleBorder(
                         side: BorderSide(
                           width: 1.0,
+                          color: Colors.blue,
                         ),
                       ),
                       highlightColor: Colors.blue,
