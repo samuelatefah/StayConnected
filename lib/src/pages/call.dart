@@ -278,6 +278,7 @@ class _CallPageState extends State<CallPage> {
   }
 
   void _onCallEnd(BuildContext context) {
+    dispose();
     Navigator.push(
       context,
       MaterialPageRoute(
