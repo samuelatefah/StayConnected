@@ -55,9 +55,8 @@ class _SurveyViewState extends State<SurveyView> {
     final _height = MediaQuery.of(context).size.height;
 
     return Scaffold(
-        //TODO: Add an appbar here!
         appBar: AppBar(
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.lightBlueAccent,
           title: Center(child: Text("Choose a topic")),
         ),
         body: Builder(
@@ -76,12 +75,151 @@ class _SurveyViewState extends State<SurveyView> {
                         onPressed: () {
                           setState(() {
                             pressed = true;
+                            _channelName = 'Art';
+                            onJoin();
+                          });
+                        },
+                        child: Text(
+                          'Art',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      FlatButton(
+                        color: pressed ? Colors.blue : Colors.transparent,
+                        highlightColor: Colors.blue,
+                        onPressed: () {
+                          setState(() {
+                            pressed = true;
+                            _channelName = 'Beauty';
+                            onJoin();
+                          });
+                        },
+                        child: Text(
+                          'Beauty',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      FlatButton(
+                        color: pressed ? Colors.blue : Colors.transparent,
+                        highlightColor: Colors.blue,
+                        onPressed: () {
+                          setState(() {
+                            pressed = true;
+                            _channelName = 'Books';
+                            onJoin();
+                          });
+                        },
+                        child: Text(
+                          'Books',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      FlatButton(
+                        color: pressed ? Colors.blue : Colors.transparent,
+                        highlightColor: Colors.blue,
+                        onPressed: () {
+                          setState(() {
+                            pressed = true;
+                            _channelName = 'Cooking';
+                            onJoin();
+                          });
+                        },
+                        child: Text(
+                          'Cooking',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      FlatButton(
+                        color: pressed ? Colors.blue : Colors.transparent,
+                        highlightColor: Colors.blue,
+                        onPressed: () {
+                          setState(() {
+                            pressed = true;
+                            _channelName = 'Games';
+                            onJoin();
+                          });
+                        },
+                        child: Text(
+                          'Games',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      FlatButton(
+                        color: pressed ? Colors.blue : Colors.transparent,
+                        highlightColor: Colors.blue,
+                        onPressed: () {
+                          setState(() {
+                            pressed = true;
+                            _channelName = 'General';
+                            onJoin();
+                          });
+                        },
+                        child: Text(
+                          'General',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      FlatButton(
+                        color: pressed ? Colors.blue : Colors.transparent,
+                        highlightColor: Colors.blue,
+                        onPressed: () {
+                          setState(() {
+                            pressed = true;
+                            _channelName = 'Movies/TV';
+                            onJoin();
+                          });
+                        },
+                        child: Text(
+                          'Movies/TV',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      FlatButton(
+                        color: pressed ? Colors.blue : Colors.transparent,
+                        highlightColor: Colors.blue,
+                        onPressed: () {
+                          setState(() {
+                            pressed = true;
+                            _channelName = 'Music';
+                            onJoin();
+                          });
+                        },
+                        child: Text(
+                          'Music',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      FlatButton(
+                        color: pressed ? Colors.blue : Colors.transparent,
+                        highlightColor: Colors.blue,
+                        onPressed: () {
+                          setState(() {
+                            pressed = true;
                             _channelName = 'Sports';
                             onJoin();
                           });
                         },
                         child: Text(
                           'Sports',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
                         ),
                       ),
                     ],
