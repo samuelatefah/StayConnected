@@ -302,9 +302,8 @@ class _CallPageState extends State<CallPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-          child: Text(channelName),
-        ),
+        centerTitle: true,
+        title: Text(channelName),
       ),
       backgroundColor: Colors.black,
       body: Center(

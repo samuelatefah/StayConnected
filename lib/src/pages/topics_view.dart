@@ -56,11 +56,9 @@ class _TopicsViewState extends State<TopicsView> {
 
     return Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           backgroundColor: Colors.blue,
-          title: Align(
-            widthFactor: 1.8,
-            child: Text("Choose a topic"),
-          ),
+          title: Text("Choose a topic"),
         ),
         body: Builder(
           builder: (context) => SizedBox(
